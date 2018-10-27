@@ -59,8 +59,8 @@ function returnFnResult(fn) {
    console.log(f()); // выведет 12
    console.log(f()); // выведет 13
  */
-var f = returnCounter(10);
-function returnCounter(number) {
+//var f = returnCounter(10);
+function returnCounter(number = 0) {
     return ()=>++number;
 }
 
